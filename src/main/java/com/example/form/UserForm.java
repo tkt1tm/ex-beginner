@@ -1,13 +1,12 @@
 package com.example.form;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 public class UserForm {
     @NotBlank(message = "名前は必須です")
     private String name;
-    @NotNull(message = "年齢は必須です")
-    private Integer age;
+    @NotBlank(message = "年齢は必須です")
+    private String age;
     @NotBlank(message = "コメントは必須です")
     private String comment;
 
@@ -19,11 +18,15 @@ public class UserForm {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public Integer getIntAge() {
+        return Integer.parseInt(age);
+    }
+
+    public void setAge(String age) {
         this.age = age;
     }
 
