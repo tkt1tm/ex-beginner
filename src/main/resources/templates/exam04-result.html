@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>登録内容確認画面</title>
+  </head>
+  <body>
+    <p>名前：<span th:text="${user.name}"></span></p>
+    <p>年齢：<span th:text="${user.age}"></span></p>
+    <pre>コメント：<span th:text="${user.comment}"></span></pre>
+  </body>
+</html>
