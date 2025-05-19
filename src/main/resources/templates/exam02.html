@@ -6,7 +6,7 @@
   </head>
   <body>
     <p>数字を入れてください</p>
-    <form action="exam02.html-result" method="post">
+    <form action="exam02.html-result" th:action="@{/exam2/result1}" method="post">
       <input type="text" name="num1" /> + <input type="text" name="num2" /> =
       <br />
       <button type="submit">足し算をする</button>
